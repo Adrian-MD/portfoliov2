@@ -177,13 +177,17 @@
     </main>
     <footer id="footer" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500" class="footer uk-section uk-background-dark uk-light">
         <div class="uk-container">
-            <h1 class="uk-heading-line uk-text-center"><span>Contact</span></h1>
+            <h1 class="uk-heading-line uk-text-center"><span>Contact Me</span></h1>
             <div class="container uk-padding uk-padding-remove-bottom">
-                <p>My name is Adrian and I am a self-taught Front-End Web Developer with Full-Stack aspirations. I began learning to code in my school years and taught myself HTML and CSS while working at my first SaaS company as soon as I graduated with a B.S. in Business Management: Marketing and a minor in Health Services Administration. The company focused on small and medium sized business growth by providing a software solution that integrated all digital marketing channels.</p>
-                <p>With the help of my co-workers and my own curiosity, I learned HTML and CSS to reduce turnaround time for website support tickets. Within 2 years, I went on to manage the customer care and web projects for all of our clients, developing many sites and tackling complex technical issues in the process. I became familiar with Bootstrap, JavaScript, jQuery, PHP, SQL and CMS platforms</p>
-                <p>During and since then, I dove headfirst into expanding my knowledge in HTML5, CSS3, JavaScript, GitHub, React, Node, Express, PostgresQL, and the command line to become a full-stack developer and pursue a career in the field.</p>
-                <p>I want to grow with a great team of people to a point where I will be able to create my own tech company; addressing problems in the healthcare industry.</p>
-                <button class="uk-button uk-align-center">Submit</button>
+                <form id="contact-form" class="uk-grid-small uk-width-1-2@s uk-align-center contact-form" action="mailto:amdavila91@gmail.com" method="POST" autocomplete="on" uk-grid>
+                    <input id="" class="uk-input uk-width-1-1@s uk-form-blank" type="text" name="tname" placeholder="Name">
+                    <input id="" class="uk-input uk-width-1-1@s" type="text" name="company" placeholder="Company">
+                    <input id="" class="uk-input uk-width-1-1@s" type="tel" name="phone" placeholder="Phone">
+                    <input id="" class="uk-input uk-width-1-1@s" type="email" name="email" placeholder="Email">
+                    <textarea id="" class="uk-textarea" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button id="" class="uk-button uk-align-center" type="submit" value="Submit">Submit</button>
+                </form>
+                
             </div>
         </div>
     </footer>
